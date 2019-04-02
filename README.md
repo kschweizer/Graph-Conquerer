@@ -2,6 +2,8 @@
 
 Input graph-matrix examples in the `/inputs` directory
 
+Inputs must have the file extension `.in` and be passed with the convention described below.
+
 example input: 
 
     3 
@@ -16,4 +18,10 @@ In this instance, the first line passed in is the number of nodes:3, the second 
 
 ### Running the solver
 
-Pass in input file and output directory to the function `solve_from_file` in `solver_template.py` or pass in an input directory and output directory to `solve_all` in `solver_template.py`. Use with Python3 recommended.
+To run on a single file:
+
+`python solver.py <input_file_name> <output_directory>`
+
+To run on all input files:
+
+`python solver.py --all <input_directory> <output_directory>`
