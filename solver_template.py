@@ -341,11 +341,11 @@ def solve_from_file(input_file, output_directory, params=[]):
 
 def solve_all(input_directory, output_directory, params=[]):
     input_files = utils.get_files_with_extension(input_directory, 'in')
-    for i in range(260, 270):
-        input_file = "inputs//" + str(i) + ".in"
-        solve_from_file(input_file, output_directory, params=params)
-    #for input_file in input_files:
+    #for i in range(260, 270):
+        #input_file = "inputs//" + str(i) + ".in"
         #solve_from_file(input_file, output_directory, params=params)
+    for input_file in input_files:
+        solve_from_file(input_file, output_directory, params=params)
 
 
 if __name__=="__main__":
