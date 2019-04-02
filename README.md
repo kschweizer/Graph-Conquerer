@@ -4,7 +4,7 @@
 
 Given a graph of nodes and undirected edges, as well as a starting node, we would like to "rule" over every node in the graph by deciding which nodes to "conquer". Conquering a node adds the node to our list of nodes that we rule, as well as all its adjacent nodes connected by an edge. Every node has an associated cost to conquer it, and any movement between nodes has an associated traveling cost. Our goal is thus to find the cheapest way to traverse the graph and conquer nodes such that every node is under our rule. 
 
-IMPORTANT NOTE: Our traversal of the graph must always start and end at the starting node, a la Traveling Salesman Problem.
+IMPORTANT NOTE: Our traversal of the graph must always start and end at the starting node, à la Traveling Salesman Problem.
 
 ### Inputs 
 
