@@ -1,5 +1,13 @@
 # Graph-Conquerer
 
+### The problem:
+
+Given a graph of nodes and undirected edges, as well as a starting node, we would like to "rule" over every node in the graph by deciding which nodes to "conquer". Conquering a node adds the node to our list of nodes that we rule, as well as all its adjacent nodes connected by an edge. Every node has an associated cost to conquer it, and any movement between nodes has an associated traveling cost. Our goal is thus to find the cheapest way to traverse the graph and conquer nodes such that every node is under our rule. 
+
+IMPORTANT NOTE: Our traversal of the graph must always start and end at the starting node, a la Traveling Salesman Problem.
+
+### Inputs 
+
 Input graph-matrix examples in the `/inputs` directory
 
 Inputs must have the file extension `.in` and be passed with the convention described below.
@@ -25,3 +33,11 @@ To run on a single file:
 To run on all input files:
 
 `python solver.py --all <input_directory> <output_directory>`
+
+### Reading outputs
+
+Outputs are structed in 2 lines:
+
+- Line 1 is the walk constructed by the solver, starting from the start node and ending at the start node
+
+- Line 2 is the list of nodes we decide to conquer
